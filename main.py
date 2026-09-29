@@ -18,20 +18,22 @@ built-in `tkinter`, so the only external dependency is the `cryptography`
 package (see requirements.txt).
 """
 
+# !!!!!   THIS FILE IS FOR UI AND UX PURPOSES ONLY, THE ACTUAL ESSENTIAL CRYPTOGRAPHY FUNCTIONS ARE IN crypto_utils.py  !!!!!!
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 
 from crypto_utils import encrypt_text, decrypt_text, CryptoError
 
 APP_TITLE = "Encryption & Decryption Demo"
-BG = "#1e1e2e"
-PANEL_BG = "#2a2a3d"
-ACCENT = "#7c5cff"
-ACCENT_DARK = "#5c3fd6"
-TEXT_LIGHT = "#f2f2f7"
-SUBTLE = "#9a9ab0"
-SUCCESS = "#3ddc84"
-ERROR = "#ff6b6b"
+BG = "#111119"
+PANEL_BG = "#222228"
+ACCENT = "#126c19"
+ACCENT_DARK = "#006400"
+TEXT_LIGHT = "#2bd347"
+SUBTLE = "#227a26"
+SUCCESS = "#00ff73"
+ERROR = "#e42c2c"
 FONT_FAMILY = "Segoe UI"
 
 SAMPLE_MESSAGE = "The treasure is buried under the old oak tree at midnight."
